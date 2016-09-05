@@ -1,17 +1,17 @@
 {
   "name": "addcopyright",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "description": "Concatinate a few files by command line",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xdan/concatinator.git"
+    "url": "git+https://github.com/xdan/addcopyright.git"
   },
   "bin": {
-    "concatinator": "./index.js"
+    "addcopyright": "./index.js"
   },
   "bugs": {
-    "url": "https://github.com/xdan/concatinator/issues"
+    "url": "https://github.com/xdan/addcopyright/issues"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
