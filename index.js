@@ -51,9 +51,11 @@ fs.readFile(argv.c, function (error, copyright) {
                         if (error) {
                             return done(error);
                         }
-                        console.log(chalk.green(files[i]));
                         if (buffer.indexOf(copyright) === -1) {                        
+                            console.log(chalk.green(files[i]));
                             fs.writeFile(files[i], copyright + buffer,done)
+                        } else {
+                             console.log(chalk.yellow(files[i]));
                         }
                     });
                 }
