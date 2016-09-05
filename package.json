@@ -1,0 +1,34 @@
+{
+  "name": "addcopyright",
+  "version": "1.0.16",
+  "description": "Concatinate a few files by command line",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xdan/concatinator.git"
+  },
+  "bin": {
+    "concatinator": "./index.js"
+  },
+  "bugs": {
+    "url": "https://github.com/xdan/concatinator/issues"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "patch": "npm version patch --no-git-tag-version && npm run github",
+    "github": "git add --all  && git commit -m \"New version %npm_package_version%.\" && git tag %npm_package_version% && git push --tags origin HEAD:master && npm publish"
+  },
+  "keywords": [
+    "concatenate",
+    "concat",
+    "files"
+  ],
+  "dependencies": {
+    "chalk": "^1.1.1",
+    "glob": "^7.0.5",
+    "serial-loop": "^3.0.0",
+    "yargs": "^3.30.0"
+  },
+  "author": "Chupurnov Valeriy",
+  "license": "MIT"
+}
